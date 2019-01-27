@@ -10,6 +10,7 @@ const StyledHeader = styled.div`
   /* align-items: center; */
   color: white;
   text-shadow: 0.08em 0.08em ${props => props.theme.darkPurple};
+  background-color: ${props => props.theme.purple};
   padding-top: 2em;
   .header-main{
     display: flex;
@@ -27,6 +28,13 @@ const StyledHeader = styled.div`
       background-color: ${props => props.theme.darkPurple};
       border: 0.09em solid rgb(190,190,190);
       box-shadow: 0 0 0 0.1em ${props => props.theme.darkPurple};
+      background-image: linear-gradient(125deg,${props => props.theme.darkPurple},48%,rgba(255,255,255,0.5) 50%,${props => props.theme.darkPurple} 52%);
+      background-position-x: -300px;
+      background-repeat: no-repeat;
+    }
+    @keyframes logoShine{
+      from{background-position-x: -150px}
+      to{background-position-x: 150px}
     }
     h1 {
       font-family: ${props => props.theme.display};
@@ -34,6 +42,11 @@ const StyledHeader = styled.div`
       margin: 0;
       letter-spacing: -0.02em;
       text-shadow: 0.05em 0.04em ${props => props.theme.darkPurple};
+    }
+  }
+  .title:hover{
+    img{
+      animation: logoShine 0.45s linear forwards;
     }
   }
   .teaser {

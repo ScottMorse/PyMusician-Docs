@@ -8,14 +8,18 @@ const theme = {
   purple: "#8500e7",
   darkPurple: "#3c0068",
   pink: "#ed008e",
+  lightBlue: "#9a0064",
   display: "Squada One, sans-serif",
-  sans: "Hind, sans-serif"
+  altFont: "Teko, sans-serif",
+  sans: "Asap, sans-serif",
+  mono: "Roboto Mono,monospace"
 }
 
 const GlobalStyle = createGlobalStyle`
 
   @import url('https://fonts.googleapis.com/css?family=Squada One');
-  @import url('https://fonts.googleapis.com/css?family=Hind');
+  @import url('https://fonts.googleapis.com/css?family=Asap');
+  @import url('https://fonts.googleapis.com/css?family=Roboto Mono');
 
   html {
     line-height: 1;
@@ -23,6 +27,10 @@ const GlobalStyle = createGlobalStyle`
   }
   body{
     margin: 0;
+  }
+  * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
   a{
     all: unset;

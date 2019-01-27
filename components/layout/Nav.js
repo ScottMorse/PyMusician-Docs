@@ -7,6 +7,7 @@ const StyledNav = styled.nav`
   align-items: center;
   height: 2.5em;
   margin-top: 2.25em;
+  margin-bottom: 0.2em;
   width: 100vw;
   color: white;
   background-color: ${props => props.theme.darkPurple};
@@ -16,6 +17,13 @@ const StyledNav = styled.nav`
   padding-top: 0.2em;
   a:hover{
     color: ${props => props.theme.pink};
+    animation: linkHover 0.4s linear;
+  }
+  @keyframes linkHover{
+    0%{transform: rotate(-1deg)}
+    33%{transform: rotate(0deg)}
+    66%{transform: rotate(1deg)}
+    100%{transform: rotate(0deg)}
   }
   a {
     margin-right: 5vw;
@@ -27,13 +35,10 @@ export default () => <StyledNav>
   <Link prefetch href="/docs">
     <a>Documentation</a>
   </Link>
-  <Link prefetch href="/docs">
-    <a>The Goals</a>
-  </Link>
   <a target="_blank" href="https://github.com/ScottMorse/PyMusician">
     On GitHub
   </a>
-  <Link prefetch href="/docs">
+  <Link prefetch href="/about">
     <a>About</a>
   </Link>
 </StyledNav>
