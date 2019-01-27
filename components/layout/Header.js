@@ -1,1 +1,1 @@
-export default () => <span></span>
+export default () => <span>Header</span>

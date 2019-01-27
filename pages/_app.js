@@ -1,5 +1,5 @@
 import App, { Container } from 'next/app'
-import Page from '../components/Page'
+import Page from '../components/layout/Page'
 import { PageTransition } from 'next-page-transitions'
 
 export default class MyApp extends App {
@@ -14,14 +14,13 @@ export default class MyApp extends App {
   }
 
   render(){
-    return (
-      <Container>
+    const { Component, pageProps } = this.props
+    return <Container>
         <Page>
           <PageTransition timeout={300} classNames="page-transition">
             <Component {...pageProps}/>
           </PageTransition>
         </Page>
       </Container>
-    )
   }
 }
