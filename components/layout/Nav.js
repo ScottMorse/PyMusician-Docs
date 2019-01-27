@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 const StyledNav = styled.nav`
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   height: 2.5em;
   margin-top: 2.25em;
@@ -15,6 +15,13 @@ const StyledNav = styled.nav`
   border-bottom: 0.05em solid ${props => props.theme.purple};
   box-shadow: 0 0 0 0.15em ${props => props.theme.darkPurple};
   padding-top: 0.2em;
+  .nav-links{
+    display: flex;
+    align-items: center;
+  }
+  .left-links{
+    margin-left: 4em;
+  }
   a:hover{
     color: ${props => props.theme.pink};
     animation: linkHover 0.4s linear;
@@ -32,13 +39,20 @@ const StyledNav = styled.nav`
 `
 
 export default () => <StyledNav>
-  <Link prefetch href="/docs">
-    <a>Documentation</a>
-  </Link>
-  <a target="_blank" href="https://github.com/ScottMorse/PyMusician">
-    On GitHub
-  </a>
-  <Link prefetch href="/about">
-    <a>About</a>
-  </Link>
+  <div className="nav-links left-links">
+    <Link prefetch href="/docs">
+      <a>Documentation</a>
+    </Link>
+    <Link prefetch href="/about">
+      <a>About</a>
+    </Link>
+  </div>
+  <div className="nav-links right-links">
+    <Link prefetch href="/versions">
+      <a>Version History</a>
+    </Link>
+    <a target="_blank" href="https://github.com/ScottMorse/PyMusician">
+      GitHub
+    </a>
+  </div>
 </StyledNav>

@@ -22,7 +22,7 @@ const StyledHome = styled.div`
     height: 0.9em;
     width: 0.55em;
     background: white;
-    margin: -0.05em 0 0 0.1em;
+    margin: -0.04em 0 0 0.05em;
     visibility: hidden;
     animation: blinkBlock 0.5s infinite alternate;
   }

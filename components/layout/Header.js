@@ -98,7 +98,7 @@ export default () => <StyledHeader>
       </a>
     </Link>
     <div className="teaser">
-      Python for music theorists,<br/>by a music theorist
+      Python for music theorists,<br/>by music theorists
     </div>
     <div className="piano-keys">
       <div className="key white"/>

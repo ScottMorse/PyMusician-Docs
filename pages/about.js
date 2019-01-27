@@ -1,1 +1,3 @@
-export default () => <div>About</div>
+import About from '../components/About'
+
+export default () => <About/>

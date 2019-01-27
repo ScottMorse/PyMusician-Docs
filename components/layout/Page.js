@@ -8,9 +8,7 @@ const theme = {
   purple: "#8500e7",
   darkPurple: "#3c0068",
   pink: "#ed008e",
-  lightBlue: "#9a0064",
   display: "Squada One, sans-serif",
-  altFont: "Teko, sans-serif",
   sans: "Asap, sans-serif",
   mono: "Roboto Mono,monospace"
 }

@@ -1,1 +1,3 @@
-export default () => <div>Docs</div>
+import Docs from '../components/Docs'
+
+export default (props) => <Docs {...props}/>
