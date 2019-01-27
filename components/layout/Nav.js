@@ -24,16 +24,16 @@ const StyledNav = styled.nav`
 `
 
 export default () => <StyledNav>
-  <Link href="/docs">
+  <Link prefetch href="/docs">
     <a>Documentation</a>
   </Link>
-  <Link href="/docs">
+  <Link prefetch href="/docs">
     <a>The Goals</a>
   </Link>
   <a target="_blank" href="https://github.com/ScottMorse/PyMusician">
     On GitHub
   </a>
-  <Link href="/docs">
+  <Link prefetch href="/docs">
     <a>About</a>
   </Link>
 </StyledNav>

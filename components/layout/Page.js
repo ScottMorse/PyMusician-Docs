@@ -39,10 +39,10 @@ const GlobalStyle = createGlobalStyle`
     transition: transform 300ms;
   }
   .page-transition-exit {
-    transform: translateX(100vw);
+    transform: translateX(0vw);
   }
   .page-transition-exit-active {
-    transform: translateX(0vw);
+    transform: translateX(100vw);
     transition: transform 300ms;
   }
 
