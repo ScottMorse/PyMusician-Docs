@@ -1,1 +1,3 @@
-export default () => <div>What hath God wrought?</div>
+import Home from '../components/Home'
+
+export default () => <Home/>
