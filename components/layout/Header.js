@@ -57,9 +57,8 @@ const StyledHeader = styled.div`
     margin-left: 4em;
     border-left: 5px solid ${props => props.theme.darkPurple};
     user-select: none;
-    @media screen and (max-width: 650px){
-      font-size: 1em;
-      margin-left: 2em;
+    @media screen and (max-width: 720px){
+      display: none;
     }
   }
   .piano-keys{

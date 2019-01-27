@@ -22,6 +22,7 @@ const GlobalStyle = createGlobalStyle`
   html {
     line-height: 1;
     font-family: ${props => props.theme.sans};
+    background-color: ${props => props.theme.purple};
   }
   body{
     margin: 0;
@@ -55,6 +56,10 @@ const GlobalStyle = createGlobalStyle`
   #page-wrap{
     background-color: ${props => props.theme.purple};
     min-height: 100vh;
+  }
+
+  main {
+    padding-bottom: 5em;
   }
 
   @media screen and (min-width: 320px){
