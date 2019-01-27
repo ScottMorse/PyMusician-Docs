@@ -52,7 +52,7 @@ const StyledHome = styled.div`
     margin: 1em;
     background-color: ${props => props.theme.darkPurple};
     border: 0.1em solid ${props => props.theme.darkPurple};
-    box-shadow:  0.2em 0.2em 0.1em ${props => props.theme.darkPurple}a0;
+    box-shadow:  0.1em 0.1em 0.1em ${props => props.theme.darkPurple}a0;
     img {
       margin: auto 0 auto 0;
       width: 150px;
@@ -79,7 +79,7 @@ const StyledHome = styled.div`
   }
   .main-module:hover{
     transform: scale(1.1);
-    box-shadow:  0.05em 0.15em 0.1em ${props => props.theme.darkPurple}a0;
+    box-shadow:  0.05em 0.05em 0.1em ${props => props.theme.darkPurple}a0;
     animation: moduleShine 0.45s linear forwards;
   }
   @keyframes moduleShine{
