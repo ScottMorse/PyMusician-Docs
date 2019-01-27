@@ -9,13 +9,13 @@ const theme = {
   darkPurple: "#3c0068",
   pink: "#ed008e",
   display: "Squada One, sans-serif",
-  sans: "Open Sans, sans-serif"
+  sans: "Hind, sans-serif"
 }
 
 const GlobalStyle = createGlobalStyle`
 
   @import url('https://fonts.googleapis.com/css?family=Squada One');
-  @import url('https://fonts.googleapis.com/css?family=Open Sans');
+  @import url('https://fonts.googleapis.com/css?family=Hind');
 
   html {
     line-height: 1;
@@ -48,6 +48,7 @@ const GlobalStyle = createGlobalStyle`
 
   #page-wrap{
     background-color: ${props => props.theme.purple};
+    min-height: 100vh;
   }
 
   @media screen and (min-width: 320px){

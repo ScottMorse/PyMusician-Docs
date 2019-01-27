@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import Nav from './Nav'
 import NProgress from "next-nprogress/component"
+import Link from 'next/link'
 
 const StyledHeader = styled.div`
   display: flex;
@@ -9,7 +10,11 @@ const StyledHeader = styled.div`
   /* align-items: center; */
   color: white;
   text-shadow: 0.08em 0.08em ${props => props.theme.darkPurple};
-  margin-top: 2em;
+  padding-top: 2em;
+  .header-main{
+    display: flex;
+    align-items: center;
+  }
   .title {
     display: flex;
     align-items: center;
@@ -31,13 +36,71 @@ const StyledHeader = styled.div`
       text-shadow: 0.05em 0.04em ${props => props.theme.darkPurple};
     }
   }
+  .teaser {
+    position: relative;
+    z-index: 1;
+    font-size: 1.2em;
+    padding-left: 1em;
+    margin-left: 4em;
+    border-left: 5px solid ${props => props.theme.darkPurple};
+    user-select: none;
+    @media screen and (max-width: 650px){
+      font-size: 1em;
+      margin-left: 2em;
+    }
+  }
+  .piano-keys{
+    display: none;
+    @media screen and (min-width: 940px){
+      position: absolute;
+      right: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      height: 7em;
+      width: 17em;
+      .key.white{
+        height: 20%;
+        width: 100%;
+        border-bottom: 0.2em solid ${props => props.theme.darkPurple};
+      }
+      .key.black{
+        /* position: absolute;s */
+        right: 0;
+        height: 20%;
+        width: 50%;
+        transform: translateY(-50%);
+        background-color: ${props => props.theme.darkPurple};
+      }
+    }
+  }
 `
 
 export default () => <StyledHeader>
-  <div className="title">
-    <img src="/static/imgs/pymusician.png"/>
-    <h1>PyMusician</h1>
+  <div className="header-main">
+    <Link href="/">
+      <a className="title">
+        <img src="/static/imgs/pymusician.png"/>
+        <h1>PyMusician</h1>
+      </a>
+    </Link>
+    <div className="teaser">
+      Python for music theorists,<br/>by a music theorist
+    </div>
+    <div className="piano-keys">
+      <div className="key white"/>
+      <div className="key black"/>
+      <div className="key white"/>
+      <div className="key black"/>
+      <div className="key white"/>
+      <div className="key black"/>
+    </div>
   </div>
   <Nav/>
-  <NProgress/>
+  <NProgress
+    color="white"
+    options={{ trickleSpeed: 50 }}
+    showAfterMs={0}
+    spinner
+  />
 </StyledHeader>
