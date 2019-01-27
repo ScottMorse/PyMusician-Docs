@@ -32,18 +32,18 @@ const GlobalStyle = createGlobalStyle`
     cursor: pointer;
   }
   .page-transition-enter {
-    opacity: 0;
+    transform: translateX(-100vw);
   }
   .page-transition-enter-active {
-    opacity: 1;
-    transition: opacity 300ms;
+    transform: translateX(0vw);
+    transition: transform 300ms;
   }
   .page-transition-exit {
-    opacity: 1;
+    transform: translateX(100vw);
   }
   .page-transition-exit-active {
-    opacity: 0;
-    transition: opacity 300ms;
+    transform: translateX(0vw);
+    transition: transform 300ms;
   }
 
   #page-wrap{
