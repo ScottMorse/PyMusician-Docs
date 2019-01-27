@@ -7,6 +7,7 @@ import styled, { ThemeProvider, createGlobalStyle } from 'styled-components'
 const theme = {
   purple: "#8500e7",
   darkPurple: "#3c0068",
+  darkerPurple: "#22003b",
   pink: "#ed008e",
   display: "Squada One, sans-serif",
   sans: "Asap, sans-serif",
@@ -105,20 +106,16 @@ const GlobalStyle = createGlobalStyle`
   }
 `
 
-export default class Page extends Component {
-  render(){
-    return <ThemeProvider theme={theme}>
-        <div id="page-wrap">
-          <GlobalStyle/>
-          <Meta/>
+export default (props) => <ThemeProvider theme={theme}>
+  <div id="page-wrap">
+    <GlobalStyle/>
+    <Meta/>
 
-            <Header/>
-            <main>
-              {this.props.children}
-            </main>
-            <Footer/>
+      <Header/>
+      <main>
+        {props.children}
+      </main>
+      <Footer/>
 
-        </div>
-      </ThemeProvider>
-  }
-}
+  </div>
+</ThemeProvider>

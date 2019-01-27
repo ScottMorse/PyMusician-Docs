@@ -1,5 +1,5 @@
-import StyledDocPage from './style'
+import DocContainer from './DocContainer'
 
-export default () => <StyledDocPage>
+export default () => <DocContainer title="Notes">
   Notes
-</StyledDocPage>
+</DocContainer>

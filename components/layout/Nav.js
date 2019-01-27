@@ -49,7 +49,7 @@ export default () => <StyledNav>
   </div>
   <div className="nav-links right-links">
     <Link prefetch href="/versions">
-      <a>Version History</a>
+      <a>Versions</a>
     </Link>
     <a target="_blank" href="https://github.com/ScottMorse/PyMusician">
       GitHub
