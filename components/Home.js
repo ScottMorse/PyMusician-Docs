@@ -1,1 +1,1 @@
-export default () => <div>What hath God wrought?</div>
+export default () => <div></div>

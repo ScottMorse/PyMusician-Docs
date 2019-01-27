@@ -13,6 +13,7 @@
   "license": "ISC",
   "dependencies": {
     "next": "7.0.2",
+    "next-nprogress": "1.4.0",
     "next-page-transitions": "1.0.0-alpha.5",
     "prismjs": "1.15.0",
     "react": "16.7.0",
