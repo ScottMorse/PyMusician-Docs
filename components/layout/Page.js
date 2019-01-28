@@ -26,6 +26,7 @@ const GlobalStyle = createGlobalStyle`
     font-size: 10px;
     font-family: ${props => props.theme.sans};
     background-color: ${props => props.theme.purple};
+    overflow: -moz-scrollbars-none;
   }
   body{
     margin: 0;
