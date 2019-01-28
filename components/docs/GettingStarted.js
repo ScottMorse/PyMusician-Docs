@@ -55,6 +55,6 @@ export default () => <DocContainer title="Getting Started">
     <p>
       PyMusician is part of the Python Package Index. It's name is "pymusician" for installation/importing. It's easy to install PyMusician with a simple pip command from your terminal:
     </p>
-    <PipAnim><div class="pip"><span>$ </span> pip install pymusician<div className="input"></div></div></PipAnim>
+    <PipAnim><div className="pip"><span>$ </span> pip install pymusician<div className="input"></div></div></PipAnim>
   </section>
 </DocContainer>

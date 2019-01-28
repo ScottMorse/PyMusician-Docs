@@ -31,7 +31,7 @@ const StyledAbout = styled.div`
 
 export default () => <StyledAbout>
   <h1>About</h1>
-  <div class="section">
+  <div className="section">
     <p>
       This is an open source project with the goal of eventually becoming one of the most powerful music theory libraries in Python.
       It aims to be of high technical quality in both the code and the musical practices it represents.
@@ -42,7 +42,7 @@ export default () => <StyledAbout>
     </p>
   </div>
   <h1>The Author</h1>
-  <div class="section">
+  <div className="section">
     <p>
       My name is Scott Morse, and this project is, in a way, my first ever
       tech project. I learned to code for the first time only a week before joining a cruise ship as 

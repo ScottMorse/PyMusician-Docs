@@ -91,9 +91,9 @@ const StyledHome = styled.div`
   }
 `
 
-export default () => <StyledHome>
-  <div class="pip"><span>$ </span> pip install pymusician<div className="input"></div></div>
-  <div class="module-container">
+export default () => <StyledHome suppressClassNameWarning>
+  <div className="pip"><span>$ </span> pip install pymusician<div className="input"></div></div>
+  <div className="module-container">
     <Link href="/docs">
       <a className="main-module">
         <img src="/static/imgs/docs.png"/>

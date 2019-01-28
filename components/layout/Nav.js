@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import Link from 'next/link'
 
-const StyledNav = styled.nav`
+const StyledNav = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -22,6 +22,10 @@ const StyledNav = styled.nav`
   .left-links{
     margin-left: 4em;
   }
+  a {
+    margin-right: 5vw;
+    font-size: 1.25em;
+  }
   a:hover{
     color: ${props => props.theme.pink};
     animation: linkHover 0.4s linear;
@@ -31,10 +35,6 @@ const StyledNav = styled.nav`
     33%{transform: rotate(0deg)}
     66%{transform: rotate(1deg)}
     100%{transform: rotate(0deg)}
-  }
-  a {
-    margin-right: 5vw;
-    font-size: 1.25em;
   }
   @media screen and (max-width: 680px){
     justify-content: center;
