@@ -1,6 +1,7 @@
 import App, { Container } from 'next/app'
 import Page from '../components/layout/Page'
-import { PageTransition } from 'next-page-transitions'
+import { PageTransition } from '../next-page-transitions-fixed/index'
+
 
 export default class MyApp extends App {
 
