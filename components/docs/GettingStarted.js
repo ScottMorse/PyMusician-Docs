@@ -2,7 +2,7 @@ import DocContainer from './DocContainer'
 import styled from 'styled-components'
 
 const PipAnim = styled.div`
-  margin-top: 1em;
+  margin-top: 2em;
   .pip{
     display: flex;
     background-color: ${props => props.theme.darkPurple};

@@ -19,7 +19,7 @@ const DocsPage = styled.div`
   }
   a{
     font-family: ${props => props.theme.display};
-    color: white;
+    color: white !important;
     font-size: 2.5em;
     padding: 20px;
     display: flex;
@@ -36,6 +36,11 @@ const DocsPage = styled.div`
     background-position-x: -300px;
     background-repeat: no-repeat;
     box-shadow:  0.1em 0.1em 0.1em ${props => props.theme.darkPurple}a0;
+    @media screen and (max-width: 768px){
+      width: 4em;
+      height: 4em;
+      color: white;
+    }
   }
   a:hover{
     transform: scale(1.1);

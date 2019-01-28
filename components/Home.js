@@ -65,6 +65,7 @@ const StyledHome = styled.div`
     }
     .module-title{
       display: flex;
+      color: white;
       justify-content: center;
       align-items: center;
       height: 75px;
@@ -79,6 +80,19 @@ const StyledHome = styled.div`
     background-image: linear-gradient(125deg,${props => props.theme.darkPurple},48%,rgba(255,255,255,0.25) 50%,${props => props.theme.darkPurple} 52%);
     background-position-x: -300px;
     background-repeat: no-repeat;
+    @media screen and (max-width: 768px){
+      width: 6em;
+      height: 8em;
+      img {
+        width: 3em;
+      }
+      .logo{
+        width: 4em;
+      }
+      .module-title{
+        height: 2em;
+      }
+    }
   }
   .main-module:hover{
     transform: scale(1.1);

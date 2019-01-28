@@ -63,7 +63,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   main {
-    padding-bottom: 10em;
+    padding-bottom: 4em;
   }
 
   @media screen and (min-width: 400px){
@@ -104,7 +104,7 @@ const GlobalStyle = createGlobalStyle`
 `
 
 export default (props) => <ThemeProvider theme={theme}>
-  <div id="page-wrap">
+  <span><div id="page-wrap">
     <GlobalStyle/>
     <Meta {...props}/>
 
@@ -112,7 +112,6 @@ export default (props) => <ThemeProvider theme={theme}>
       <main>
         {props.children}
       </main>
-      <Footer/>
-
   </div>
+  <Footer/></span>
 </ThemeProvider>
