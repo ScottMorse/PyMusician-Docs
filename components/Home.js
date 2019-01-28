@@ -6,6 +6,7 @@ const StyledHome = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: white;
   .pip{
     display: flex;
     background-color: ${props => props.theme.pink};

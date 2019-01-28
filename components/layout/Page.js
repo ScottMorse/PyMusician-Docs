@@ -37,6 +37,7 @@ const GlobalStyle = createGlobalStyle`
   }
   a{
     all: unset;
+    color: white;
     transition: all 0.4s ease;
   }
   a:hover{

@@ -8,6 +8,7 @@ const StyledDocPage = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: white;
   .top{
     display: flex;
     align-items: center;
@@ -19,10 +20,10 @@ const StyledDocPage = styled.div`
     position: absolute;
     left: 0;
     background-color: ${props => props.theme.pink};
-    padding: 0.5em;
-    font-size: 1.5em;
+    padding: 0.2em;
+    font-size: 1.2em;
     border-radius: 5%/15%;
-    margin-left: 1em;
+    margin-left: 1.2em;
     box-shadow:  0.1em 0.1em 0.1em ${props => props.theme.darkPurple}a0;
   }
   .title{

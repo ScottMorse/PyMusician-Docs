@@ -5,6 +5,7 @@ const DocsPage = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: white;
   h1{
     font-family: ${props => props.theme.display};
     font-size: 3em;
