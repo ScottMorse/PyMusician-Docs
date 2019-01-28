@@ -1,6 +1,4 @@
 import React, { Component } from 'react'
-import Prism from 'prismjs'
-import PrismPython from 'prismjs/components/prism-python'
 import styled from 'styled-components'
 
 //from Prism css
@@ -119,22 +117,12 @@ const CodeStyles = styled.div`
   .token.deleted {
     color: red;
   }
-
 `
 
-export default class Code extends Component{
-
-  componentDidMount() {
-    Prism.highlightAll();
-  }
-  
-  render(){
-    return <CodeStyles>
-      <pre>
-        <code className="language-python">
-          {this.props.children}
-        </code>
-      </pre>
-    </CodeStyles>
-  }
-}
+export default (props) => <CodeStyles>
+    <pre>
+      <code className="language-python">
+        {props.children}
+      </code>
+    </pre>
+  </CodeStyles>

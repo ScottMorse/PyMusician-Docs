@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import styled from "styled-components"
+import Prism from 'prismjs'
+import 'prismjs/components/prism-python'
 import Link from 'next/link'
 
 const StyledDocPage = styled.div`
@@ -115,6 +117,7 @@ export default class DocContainer extends Component {
       topButton.innerHTML = "↑ To Top"
       section.insertBefore(topButton,section.firstElementChild)
     })
+    Prism.highlightAll();
   }
 
   render(){
