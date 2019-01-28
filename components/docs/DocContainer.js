@@ -103,6 +103,13 @@ const StyledDocPage = styled.div`
       margin: -1em 0 0 -1em;
       color: white;
     }
+    .center-list{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: center;
+      
+    }
   }
 `
 

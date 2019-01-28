@@ -9,9 +9,6 @@ export default () => <DocContainer title="Intervals">
       <li><a href="#add-sub">Adding/subtracting with Notes</a></li>
       <li><a href="#properties">Interval properties</a></li>
       <li><a href="#static">Static methods</a></li>
-      <li><a href=""></a></li>
-      <li><a href=""></a></li>
-      <li><a href=""></a></li>
     </ul>
   </section>
   <section>
