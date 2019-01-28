@@ -12,7 +12,6 @@ const StyledAbout = styled.div`
     color: #202020;
     background: white;
     box-shadow:  0.2em 0.2em 0.1em ${props => props.theme.darkPurple}a0;
-    border-radius: 5%/10%;
     margin: 1em;
   }
   h1{
@@ -26,6 +25,7 @@ const StyledAbout = styled.div`
   p {
     font-size: 1.2em;
     text-indent: 3em;
+    font-family: ${props => props.theme.serif}
   }
 `
 

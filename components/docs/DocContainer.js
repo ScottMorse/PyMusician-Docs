@@ -41,6 +41,9 @@ const StyledDocPage = styled.div`
     @media screen and (max-width: 900px){
       width: calc(90vw - 4em); 
     }
+    a {
+      color: blue;
+    }
     background: white;
     color: #202020;
     padding: 2em;

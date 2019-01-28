@@ -41,7 +41,7 @@ const CodeStyles = styled.div`
   code[class*="language-"] {
     background:${props => props.theme.darkerPurple};
     color: white;
-    box-shadow: -.3em 0 0 .3em ${props => props.theme.darkerPurple};, .3em 0 0 .3em ${props => props.theme.darkerPurple};
+    box-shadow: .3em 0 0 .3em ${props => props.theme.darkerPurple};
   }
 
   /* Inline code */
