@@ -13,16 +13,19 @@ const StyledHome = styled.div`
     color: white;
     margin-top: -1em;
     font-family: ${props => props.theme.mono};
-    user-select: none;
     box-shadow:  0.2em 0.2em 0.1em ${props => props.theme.darkPurple}a0;
+    span{
+      user-select: none;
+      margin-right: 0.5em;
+    }
   }
   .input{
     color: white;
     font-size: 1.1em;
     height: 0.9em;
-    width: 0.55em;
+    width: 0.5em;
     background: white;
-    margin: -0.061em 0 0 0.045em;
+    margin: -0.059em 0 0 0.045em;
     visibility: hidden;
     animation: blinkBlock 0.5s infinite alternate;
   }
@@ -89,7 +92,7 @@ const StyledHome = styled.div`
 `
 
 export default () => <StyledHome>
-  <div class="pip">$ pip install pymusician<div className="input"></div></div>
+  <div class="pip"><span>$ </span> pip install pymusician<div className="input"></div></div>
   <div class="module-container">
     <Link href="/docs">
       <a className="main-module">
