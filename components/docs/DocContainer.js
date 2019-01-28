@@ -97,7 +97,7 @@ const StyledDocPage = styled.div`
         }
       }
     }
-    .top-link{
+    a.top-link{
       position: absolute;
       background: ${props => props.theme.pink};
       padding: 0.4em;
