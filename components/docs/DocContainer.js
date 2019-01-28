@@ -62,6 +62,7 @@ const StyledDocPage = styled.div`
     h3{
       font-family: ${props => props.theme.mono};
       font-weight: bold;
+      height: 1.5em;
       overflow-x: scroll;
     }
     p {

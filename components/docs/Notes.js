@@ -3,7 +3,7 @@ import Python from './Python'
 
 export default () => <DocContainer title="Notes">
   <section>
-    <h2>Reference for this section:</h2>
+    <h2>Reference for This Section:</h2>
     <ul className="ref-links">
       <li><a href="#a4">A4</a></li>
       <li><a href="#note-class">Note class</a></li>
