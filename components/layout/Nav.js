@@ -36,6 +36,9 @@ const StyledNav = styled.nav`
     margin-right: 5vw;
     font-size: 1.25em;
   }
+  @media screen and (max-width: 680px){
+    justify-content: center;
+  }
 `
 
 export default () => <StyledNav>

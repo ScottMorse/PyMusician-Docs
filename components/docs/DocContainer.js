@@ -123,7 +123,7 @@ export default class DocContainer extends Component {
   render(){
     return <StyledDocPage>
       <div className="top">
-        <Link href="/docs">
+        <Link prefetch href="/docs">
           <a className="back-button">← Back</a>
         </Link>
         <h1 id="top" className="title">{this.props.title}</h1>
