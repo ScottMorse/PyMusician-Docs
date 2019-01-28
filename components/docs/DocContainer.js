@@ -45,7 +45,7 @@ const StyledDocPage = styled.div`
       width: calc(90vw - 4em); 
     }
     a {
-      color: blue;
+      color: blue !important;
     }
     background: white;
     color: #202020;
@@ -102,14 +102,13 @@ const StyledDocPage = styled.div`
       background: ${props => props.theme.pink};
       padding: 0.4em;
       margin: -1em 0 0 -1em;
-      color: white;
+      color: white !important;
     }
     .center-list{
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
       align-items: center;
-      
     }
   }
 `

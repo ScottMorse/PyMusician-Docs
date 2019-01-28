@@ -16,10 +16,10 @@ const theme = {
 
 const GlobalStyle = createGlobalStyle`
 
-  @import url('https://fonts.googleapis.com/css?family=Squada One');
-  @import url('https://fonts.googleapis.com/css?family=Asap');
-  @import url('https://fonts.googleapis.com/css?family=Roboto Mono');
-  @import url('https://fonts.googleapis.com/css?family=Yrsa');
+  @import url('/static/fonts/Asap');
+  @import url('/static/fonts/Yrsa');
+  @import url('/static/fonts/Roboto_Mono');
+  @import url('/static/fonts/Squada_One');
 
   html {
     line-height: 1;
