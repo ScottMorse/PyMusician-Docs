@@ -1,8 +1,7 @@
-import React, { Component } from 'react'
 import Header from './Header'
 import Meta from './Meta'
 import Footer from './Footer'
-import styled, { ThemeProvider, createGlobalStyle } from 'styled-components'
+import { ThemeProvider, createGlobalStyle } from 'styled-components'
 
 const theme = {
   purple: "#8500e7",
