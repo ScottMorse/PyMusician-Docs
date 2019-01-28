@@ -1,5 +1,4 @@
 import DocContainer from './DocContainer'
-import Python from './Python'
 import styled from 'styled-components'
 
 const PipAnim = styled.div`
