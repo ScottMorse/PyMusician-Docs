@@ -16,7 +16,7 @@ export default class MyApp extends App {
   render(){
     const { Component, pageProps } = this.props
     return <Container>
-        <Page>
+        <Page {...pageProps}>
           <PageTransition timeout={300} classNames="page-transition">
             <Component {...pageProps}/>
           </PageTransition>

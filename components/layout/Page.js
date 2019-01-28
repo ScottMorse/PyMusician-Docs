@@ -111,7 +111,7 @@ const GlobalStyle = createGlobalStyle`
 export default (props) => <ThemeProvider theme={theme}>
   <div id="page-wrap">
     <GlobalStyle/>
-    <Meta/>
+    <Meta {...props}/>
 
       <Header/>
       <main>
