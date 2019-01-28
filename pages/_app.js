@@ -3,6 +3,7 @@ import Page from '../components/layout/Page'
 import { PageTransition } from 'next-page-transitions'
 
 export default class MyApp extends App {
+
   static async getInitialProps({ Component, ctx }){
     let pageProps = {}
     if(Component.getInitialProps){
