@@ -11,6 +11,7 @@ const theme = {
   pink: "#ed008e",
   display: "Squada One, sans-serif",
   sans: "Asap, sans-serif",
+  serif: "Yrsa, Asap, sans-serif",
   mono: "Roboto Mono,monospace"
 }
 
@@ -19,6 +20,7 @@ const GlobalStyle = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css?family=Squada One');
   @import url('https://fonts.googleapis.com/css?family=Asap');
   @import url('https://fonts.googleapis.com/css?family=Roboto Mono');
+  @import url('https://fonts.googleapis.com/css?family=Yrsa');
 
   html {
     line-height: 1;

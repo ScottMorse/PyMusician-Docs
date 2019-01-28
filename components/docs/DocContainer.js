@@ -14,7 +14,7 @@ const StyledDocPage = styled.div`
   }
   .back-button{
     color: white;
-    position: fixed;
+    position: absolute;
     transform: translateX(-28vw);
     background-color: ${props => props.theme.pink};
     padding: 0.5em;
@@ -34,6 +34,33 @@ const StyledDocPage = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  section {
+    margin-bottom: 1em;
+    width: calc(900px - 4em);
+    @media screen and (max-width: 900px){
+      width: calc(100vw - 4em); 
+    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    color: #202020;
+    padding: 2em;
+    box-shadow:  0.1em 0.1em 0.1em ${props => props.theme.darkPurple}a0;
+    h2 {
+      font-family: ${props => props.theme.display};
+      text-align: center;
+      font-size: 2em;
+      margin: 0 0 0.5em 0;
+    }
+    p {
+      text-indent: 3em;
+      line-height: 1.2;
+      font-size: 1.2em;
+      font-family: ${props => props.theme.serif};
+      margin: 0.5em 0 0.5em 0;
+    }
   }
 `
 

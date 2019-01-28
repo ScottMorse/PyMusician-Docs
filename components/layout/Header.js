@@ -54,7 +54,8 @@ const StyledHeader = styled.div`
     z-index: 1;
     font-size: 1.2em;
     padding-left: 1em;
-    margin-left: 4em;
+    margin-left: 1.5em;
+    margin-top: 0.5em;
     border-left: 5px solid ${props => props.theme.darkPurple};
     user-select: none;
     @media screen and (max-width: 720px){

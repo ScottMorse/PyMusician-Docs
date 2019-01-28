@@ -8,6 +8,7 @@ const CodeStyles = styled.div`
   width: 90%;
   border: 0.3em solid whitesmoke;
   box-shadow: 0 0 0 0.15em ${props => props.theme.darkerPurple};
+  margin-top: 1em;
   code[class*="language-"],
   pre[class*="language-"] {
     font-family: ${props => props.theme.mono};
