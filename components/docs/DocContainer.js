@@ -15,7 +15,7 @@ const StyledDocPage = styled.div`
   .back-button{
     color: white;
     position: absolute;
-    transform: translateX(-28vw);
+    left: 0;
     background-color: ${props => props.theme.pink};
     padding: 0.5em;
     font-size: 1.5em;
@@ -39,11 +39,8 @@ const StyledDocPage = styled.div`
     margin-bottom: 1em;
     width: calc(900px - 4em);
     @media screen and (max-width: 900px){
-      width: calc(100vw - 4em); 
+      width: calc(90vw - 4em); 
     }
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     background: white;
     color: #202020;
     padding: 2em;
@@ -52,7 +49,15 @@ const StyledDocPage = styled.div`
       font-family: ${props => props.theme.display};
       text-align: center;
       font-size: 2em;
-      margin: 0 0 0.5em 0;
+      margin: 1em 0 0.5em 0;
+    }
+    h2:first-child{
+      margin-top: 0;
+    }
+    h3{
+      font-family: ${props => props.theme.mono};
+      font-weight: bold;
+      overflow-x: scroll;
     }
     p {
       text-indent: 3em;
@@ -61,11 +66,53 @@ const StyledDocPage = styled.div`
       font-family: ${props => props.theme.serif};
       margin: 0.5em 0 0.5em 0;
     }
+    table, th {
+      border: 1px solid black;
+    }
+    table{
+      margin: 0 auto 0 auto;
+    }
+    .center{
+      width: 100%;
+      text-align: center;
+    }
+    .ref-links{
+      display: flex;
+      flex-direction: column;
+      max-height: 10em;
+      margin: 1em;
+      flex-wrap: wrap;
+      li {
+        padding-right: 3em;
+        margin: 0.2em;
+        a {
+          color: blue;
+        }
+      }
+    }
+    .top-link{
+      position: absolute;
+      background: ${props => props.theme.pink};
+      padding: 0.4em;
+      margin: -1em 0 0 -1em;
+      color: white;
+    }
   }
 `
 
 
 export default class DocContainer extends Component {
+
+  componentDidMount(){
+    document.querySelectorAll('section').forEach((section,i) => {
+      if(i==0) return
+      const topButton = document.createElement('a')
+      topButton.href="#top"
+      topButton.className = "top-link"
+      topButton.innerHTML = "↑ To Top"
+      section.insertBefore(topButton,section.firstElementChild)
+    })
+  }
 
   render(){
     return <StyledDocPage>
@@ -73,7 +120,7 @@ export default class DocContainer extends Component {
         <Link href="/docs">
           <a className="back-button">← Back</a>
         </Link>
-        <h1 className="title">{this.props.title}</h1>
+        <h1 id="top" className="title">{this.props.title}</h1>
       </div>
       <div className="doc-main">
         {this.props.children}
