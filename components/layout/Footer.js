@@ -9,6 +9,9 @@ const StyledFooter = styled.div`
   height: 8em;
   font-size: 0.8em;
   background-color: lightgrey;
+  /* position: absolute; */
+  width: 100vw;
+
   .icons {
     a {
       color: blue;

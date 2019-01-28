@@ -43,16 +43,16 @@ export default () => <StyledNav>
     <Link prefetch href="/docs">
       <a>Documentation</a>
     </Link>
-    <Link prefetch href="/about">
-      <a>About</a>
-    </Link>
-  </div>
-  <div className="nav-links right-links">
     <Link prefetch href="/versions">
       <a>Versions</a>
     </Link>
+  </div>
+  <div className="nav-links right-links">
     <a target="_blank" href="https://github.com/ScottMorse/PyMusician">
       GitHub
     </a>
+    <Link prefetch href="/about">
+      <a>About</a>
+    </Link>
   </div>
 </StyledNav>

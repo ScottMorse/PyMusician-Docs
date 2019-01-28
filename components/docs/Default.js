@@ -41,14 +41,9 @@ const DocsPage = styled.div`
     transform: scale(1.1);
     background-color: ${props => props.theme.pink};
     box-shadow:  0.05em 0.15em 0.1em ${props => props.theme.darkPurple}a0;
-    animation: aShine 0.45s linear forwards;
   }
   .getting{
     background-color: ${props => props.theme.pink};
-  }
-  @keyframes aShine{
-    from{background-position-x: -300px}
-    to{background-position-x: 300px}
   }
 `
 

@@ -60,7 +60,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   main {
-    padding-bottom: 5em;
+    padding-bottom: 10em;
   }
 
   @media screen and (min-width: 320px){
