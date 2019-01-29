@@ -332,7 +332,7 @@ function (_React$Component) {
 PageTransition.propTypes = {
   children: _propTypes.default.node,
   classNames: _propTypes.default.string,
-  timeout: _PropTypes.timeoutsShape,
+  timeout: process.env.NODE_ENV === "production" ? null : _PropTypes.timeoutsShape.isRequired,
   loadingComponent: _propTypes.default.element,
   loadingDelay: _propTypes.default.number,
   loadingCallbackName: _propTypes.default.string,
@@ -340,7 +340,7 @@ PageTransition.propTypes = {
   /* eslint-disable react/require-default-props */
   loadingTimeout: function loadingTimeout(props) {
     var pt = _PropTypes.timeoutsShape;
-    if (props.loadingComponent) pt = pt;
+    if (props.loadingComponent && process.env.NODE_ENV !== "production") pt = pt.isRequired;
 
     for (var _len2 = arguments.length, args = new Array(_len2 > 1 ? _len2 - 1 : 0), _key2 = 1; _key2 < _len2; _key2++) {
       args[_key2 - 1] = arguments[_key2];
