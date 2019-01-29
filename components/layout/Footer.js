@@ -10,8 +10,11 @@ const StyledFooter = styled.div`
   font-size: 0.8em;
   background-color: lightgrey;
   /* position: absolute; */
+  text-align: center;
   width: 100vw;
-
+  div {
+    max-width: 80vw;
+  }
   .icons {
     a {
       color: blue;

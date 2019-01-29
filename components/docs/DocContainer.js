@@ -64,7 +64,7 @@ const StyledDocPage = styled.div`
       font-family: ${props => props.theme.mono};
       font-weight: bold;
       height: 1.5em;
-      overflow-x: scroll;
+      overflow-x: hidden;
     }
     p {
       text-indent: 3em;
