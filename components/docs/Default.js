@@ -55,7 +55,7 @@ const DocsPage = styled.div`
 
 export default () => <DocsPage>
   <h1>Documentation</h1>
-  <div class="links">
+  <div className="links">
     <Link href="/docs?page=getting-started">
       <a className="getting">Getting Started</a>
     </Link>
