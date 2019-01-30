@@ -331,7 +331,8 @@ function (_React$Component) {
 
 PageTransition.propTypes = {
   children: _propTypes.default.node,
-  classNames: _propTypes.default.string,
+  // classNames: _propTypes.default.string,
+  classNames: ()=>{return "DUM DUM"},
   timeout: process.env.NODE_ENV === "production" ? null : _PropTypes.timeoutsShape.isRequired,
   loadingComponent: _propTypes.default.element,
   loadingDelay: _propTypes.default.number,

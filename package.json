@@ -15,7 +15,7 @@
   "dependencies": {
     "next": "7.0.2",
     "next-nprogress": "1.4.0",
-    "next-page-transitions": "1.0.0-alpha.4",
+    "next-page-transitions": "1.0.0-alpha.6",
     "prismjs": "1.15.0",
     "react": "16.7.0",
     "react-dom": "16.7.0",
